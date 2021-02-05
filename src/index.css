@@ -23,9 +23,9 @@
 	text-transform: capitalize;
 }
 
-.navbar a: hover {
+/*.navbar a: hover {
 	color: #3498db;
-}
+}*/
 
 .menu_active {
 	font-weight: bold;
