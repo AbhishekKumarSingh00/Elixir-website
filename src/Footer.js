@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+import {NavLink} from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -9,23 +10,25 @@ import {
 
 export default function SocialFollow() {
   return (
+    <>
     <div className="social-container">
-      <a
-        href="https://www.facebook.com/elixirHealthSociety/"
+      <NavLink
+        to="https://www.facebook.com/elixirHealthSociety/"
         className="facebook social" target = "blank"
       >
         <FontAwesomeIcon icon={faFacebook} size="2x" />
-      </a>
-      <a href="#" 
+      </NavLink>
+      <NavLink to="#" 
       className="twitter social" target = "blank">
         <FontAwesomeIcon icon={faTwitter} size="2x" />
-      </a>
-      <a
-        href="https://www.instagram.com/elixir.healthsociety/?hl=en"
+      </NavLink>
+      <NavLink
+        to="https://www.instagram.com/elixir.healthsociety/?hl=en"
         className="instagram social" target = "blank"
       >
         <FontAwesomeIcon icon={faInstagram} size="2x" />
-      </a>
+      </NavLink>
     </div>
+    </>
   );
 }
